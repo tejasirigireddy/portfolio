@@ -1,0 +1,167 @@
+/* Header */
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 96%;
+  border: 1px solid #ddd;
+  margin: 1% auto;
+  box-shadow: 3px 3px 30px #000;
+}
+
+/* first child */
+.childa {
+  width: 50%;
+  text-align: left;
+}
+
+/* second child */
+.childb {
+  width: 50%;
+  text-align: right;
+}
+
+/* For font */
+* {
+  font-family: serif;
+}
+
+/* banner */
+.banner {
+  width: 96%;
+  margin: 1% auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.parent1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 96%;
+  margin: 1% auto;
+  box-shadow: 3px 3px 30px #000;
+}
+
+.card {
+  width: 22.5%;
+  margin: 1%;
+  text-align: center;
+  border: 1px solid #000;
+  box-shadow: 0px 8px 8px -8px #000;
+
+}
+
+.card h2 {
+  text-align: center;
+}
+
+/* For animations effects */
+.card img:hover {
+  transform: scale(1.5);
+  transform: scale(1.5);
+  transform: scale(0.9);
+}
+
+/* for toshiba */
+.toshiba {
+  background-color: #ffffff;
+  transition: transform .2s;
+  width: 100px;
+  height: 100px;
+}
+
+.card img {
+  background-color: #ffffff;
+  transition: transform .2s;
+  width: 100px;
+  height: 100px;
+  margin: 2% auto;
+}
+
+/* For anchor tag */
+a {
+  text-decoration: none;
+  background-color: #000000;
+  color: #fff;
+  display: block;
+}
+
+/* For Footer */
+footer {
+  background-color: #808080;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/*  Media queries for responsive design */
+/*  For mobiles  */
+@media only screen and (min-width:320px) and (max-width:480px) {
+  .parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 1% auto;
+    box-shadow: 3px 3px 30px #000;
+  }
+
+  /* first class */
+  .childa {
+    width: 90%;
+    text-align: center;
+  }
+
+  /* second class */
+  .childb {
+    width: 90%;
+    text-align: center;
+  }
+
+  /*  banner display cards  */
+  .parent1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 1% auto;
+    box-shadow: 3px 3px 30px #000;
+  }
+
+  /* For card */
+  .card {
+    width: 100%;
+  }
+
+  /* For displaying image in the card */
+  .card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+  }
+
+
+
+}
+
+/* Media queries for tablet view */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .parent1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1% auto;
+    box-shadow: 3px 3px 30px #000;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
